@@ -1,0 +1,41 @@
+{
+ "name": "frontend-project-lvl1-Lena-Chepkasova",
+ "version": "1.0.0",
+ "description": "JS project N1 - brain games",
+ "main": "src/index.js",
+ "bin": {
+  "hexlet": "dist/bin/hexlet.js"
+ },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "type",
+  "url": "git+https://github.com/LennyCh/frontend-project-lvl1.git"
+ },
+ "author": "Elena Chepkasova (lena.chepkasova.95@mail.ru)",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/LennyCh/frontend-project-lvl1/issues"
+ },
+ "homepage": "https://github.com/LennyCh/frontend-project-lvl1#readme",
+ "dependencies": {
+  "makefile": "0.0.2"
+ },
+ "devDependencies": {
+  "@babel/cli": "^7.8.4",
+  "@babel/core": "^7.9.0",
+  "@babel/node": "^7.8.7",
+  "@babel/preset-env": "^7.9.0",
+  "@typescript-eslint/eslint-plugin": "^2.25.0",
+  "@typescript-eslint/parser": "^2.25.0",
+  "eslint": "^6.8.0",
+  "eslint-config-standard": "^14.1.1",
+  "eslint-plugin-import": "^2.20.1",
+  "eslint-plugin-node": "^11.0.0",
+  "eslint-plugin-promise": "^4.2.1",
+  "eslint-plugin-react": "^7.19.0",
+  "eslint-plugin-standard": "^4.0.1",
+  "jest": "^25.1.0"
+ }
+}
