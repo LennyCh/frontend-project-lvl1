@@ -20,7 +20,9 @@
  },
  "homepage": "https://github.com/LennyCh/frontend-project-lvl1#readme",
  "dependencies": {
-  "makefile": "0.0.2"
+  "lodash": "^4.17.15",
+  "makefile": "0.0.2",
+  "readline-sync": "^1.4.10"
  },
  "devDependencies": {
   "@babel/cli": "^7.8.4",
