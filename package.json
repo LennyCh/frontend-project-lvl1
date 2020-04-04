@@ -23,12 +23,14 @@
   "eslint-plugin-babel": "^5.3.0",
   "lodash": "^4.17.15",
   "makefile": "0.0.2",
+  "random": "^2.2.0",
   "readline-sync": "^1.4.10"
  },
  "devDependencies": {
   "@babel/cli": "^7.8.4",
   "@babel/core": "^7.9.0",
   "@babel/node": "^7.8.7",
+  "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
   "@babel/preset-env": "^7.9.0",
   "@typescript-eslint/eslint-plugin": "^2.25.0",
   "@typescript-eslint/parser": "^2.25.0",

@@ -18,11 +18,13 @@ test-coverage:
 
 lint:
 	npx eslint .
-
 publish:
 	npm publish --dry-run
 
 start:
-	node bin/brain-games.js
+	node src/bin/brain-games.js
+
+brain-even:
+	npx babel-node src/brain-even.js
 
 .PHONY: test
