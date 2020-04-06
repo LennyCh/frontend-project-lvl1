@@ -25,6 +25,9 @@ start:
 	node src/bin/brain-games.js
 
 brain-even:
-	npx babel-node src/brain-even.js
+	npx babel-node src/games/brain-even.js
+
+brain-calc:
+	npx babel-node src/games/brain-calc.js
 
 .PHONY: test

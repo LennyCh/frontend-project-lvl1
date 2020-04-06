@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-const readline = require('readline-sync');
+import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
-const name = readline.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
+const printName = readlineSync.question('May I have your name? ');
+console.log(`Hello,  ${printName}!`);
+
+export default printName;
