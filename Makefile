@@ -30,4 +30,7 @@ brain-even:
 brain-calc:
 	npx babel-node src/games/brain-calc.js
 
+brain-gcd:
+	npx babel-node src/games/brain-gcd.js
+
 .PHONY: test
