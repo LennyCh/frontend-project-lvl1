@@ -33,4 +33,7 @@ brain-calc:
 brain-gcd:
 	npx babel-node src/games/brain-gcd.js
 
+brain-progression:
+	npx babel-node src/games/brain-progression.js
+
 .PHONY: test
