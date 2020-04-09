@@ -34,4 +34,8 @@ You are shown 10 numbers forming an arithmetic progression. One of the numbers i
 
 To run this game enter "make brain-progression" from root directory (~programms/frontend-project-lvl1).
 
-5)  
+5) Brain-prime.
+
+You are shown a random number. And you need to answer "yes" if the number is prime, otherwise answer "no".
+
+To run this game enter "make brain-prime" from root directory (~programms/frontend-project-lvl1). 
