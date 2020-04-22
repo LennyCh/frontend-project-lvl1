@@ -25,18 +25,18 @@ start:
 	node src/bin/brain-games.js
 
 brain-even:
-	npx babel-node src/games/brain-even.js
+	npx node src/games/brain-even.js
 
 brain-calc:
-	npx babel-node src/games/brain-calc.js
+	npx node src/games/brain-calc.js
 
 brain-gcd:
-	npx babel-node src/games/brain-gcd.js
+	npx node src/games/brain-gcd.js
 
 brain-progression:
-	npx babel-node src/games/brain-progression.js
+	npx node src/games/brain-progression.js
 
 brain-prime:
-	npx babel-node src/games/brain-prime.js
+	npx node src/games/brain-prime.js
 
 .PHONY: test

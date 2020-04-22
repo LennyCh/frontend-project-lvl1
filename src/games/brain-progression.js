@@ -2,10 +2,11 @@
 
 import readlineSync from 'readline-sync';
 import random from 'random';
+import { welcome, name, hello, numericalAnswer } from '../index.js';
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello,  ${name}!`);
+welcome();
+name;
+hello();
 
 console.log('What number is missing in the progression?');
 let correctAnswers = 0;
@@ -32,15 +33,5 @@ for (let i = 0; i < numberOfRounds; i += 1) {
 	console.log(`Question: ${arrayForQuestion}`);
 	const answer = readlineSync.question('Your answer: ');
 
-	if (expectedAnswer !== +answer) {
-		console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}"`);
-		console.log(`Let's try again, ${name}`);
-		break;
-	} if (expectedAnswer === +answer) {
-		correctAnswers += 1;
-		console.log('Correct!');
-	};
-	if (correctAnswers === numberOfRounds) {
-		console.log(`Congratulations, ${name}!`);
-	};
+	numericalAnswer(answer, expectedAnswer);
 }
