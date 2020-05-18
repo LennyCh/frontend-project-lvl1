@@ -21,22 +21,19 @@ lint:
 publish:
 	npm publish --dry-run
 
-start:
-	node src/bin/brain-games.js
-
 brain-even:
-	npx node src/games/brain-even.js
+	npx node src/bin/brain-even.js
 
 brain-calc:
-	npx node src/games/brain-calc.js
+	npx node src/bin/brain-calc.js
 
 brain-gcd:
-	npx node src/games/brain-gcd.js
+	npx node src/bin/brain-gcd.js
 
 brain-progression:
-	npx node src/games/brain-progression.js
+	npx node src/bin/brain-progression.js
 
 brain-prime:
-	npx node src/games/brain-prime.js
+	npx node src/bin/brain-prime.js
 
 .PHONY: test

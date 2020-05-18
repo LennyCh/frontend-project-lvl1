@@ -5,11 +5,11 @@
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "brain-even": "src/games/brain-even.js",
-    "brain-calc": "src/games/brain-calc.js",
-    "brain-gcd": "src/games/brain-gcd.js",
-    "brain-progression": "src/games/brain-progression.js",
-    "brain-prime": "src/games/brain-prime.js"
+    "brain-even": "src/bin/brain-even.js",
+    "brain-calc": "src/bin/brain-calc.js",
+    "brain-gcd": "src/bin/brain-gcd.js",
+    "brain-progression": "src/bin/brain-progression.js",
+    "brain-prime": "src/bin/brain-prime.js"
   },
   "scripts": {
     "test": "jest",
@@ -31,21 +31,12 @@
     "random": "^2.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/node": "^7.8.7",
-    "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
-    "@babel/preset-env": "^7.9.5",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.4.0",
     "debug": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.8.2",
-    "jest": "^25.2.4",
-    "jest-cli": "^25.3.0",
     "readline-sync": "^1.4.10"
   }
 }

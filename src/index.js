@@ -1,5 +1,3 @@
-#!/usr/bin/env node index.js
-
 import readlineSync from 'readline-sync';
 import random from 'random';
 
