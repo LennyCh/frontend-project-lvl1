@@ -1,7 +1,7 @@
 install: install-deps
 
 run:
-	npx node src/bin/brain-games.js 10
+	npx node src/index.js 10
 
 install-deps:
 	npm ci
