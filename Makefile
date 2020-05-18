@@ -1,7 +1,7 @@
 install: install-deps
 
 run:
-	npx node src/bin/hexlet.js 10
+	npx node src/bin/brain-games.js 10
 
 install-deps:
 	npm ci
@@ -17,20 +17,5 @@ lint:
 
 publish:
 	npm publish --dry-run
-
-brain-even:
-	npx node src/bin/brain-even.js
-
-brain-calc:
-	npx node src/bin/brain-calc.js
-
-brain-gcd:
-	npx node src/bin/brain-gcd.js
-
-brain-progression:
-	npx node src/bin/brain-progression.js
-
-brain-prime:
-	npx node src/bin/brain-prime.js
 
 .PHONY: test
