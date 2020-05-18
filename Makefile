@@ -1,13 +1,10 @@
 install: install-deps
 
 run:
-	npx babel-node 'src/bin/hexlet.js' 10
+	npx node src/bin/hexlet.js 10
 
 install-deps:
 	npm ci
-
-build:
-	npm run build
 
 test:
 	npm test
@@ -17,6 +14,7 @@ test-coverage:
 
 lint:
 	npx eslint .
+
 publish:
 	npm publish --dry-run
 
