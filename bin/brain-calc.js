@@ -2,8 +2,8 @@
 
 import readlineSync from 'readline-sync';
 import random from 'random';
-import { welcome, name, hello, numericalAnswer } from '../index.js';
-import { calc } from '../games/brain-calc.js';
+import { welcome, name, hello, numericalAnswer } from '../src/index.js';
+import { calc } from '../src/games/brain-calc.js';
 
 welcome();
 name;

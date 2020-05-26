@@ -2,8 +2,8 @@
  
 import readlineSync from 'readline-sync';
 import random from 'random';
-import { welcome, name, hello, stringAnswer } from '../index.js';
-import { isPrime } from '../games/brain-prime.js';
+import { welcome, name, hello, stringAnswer } from '../src/index.js';
+import { isPrime } from '../src/games/brain-prime.js';
 
 welcome();
 name;

@@ -1,5 +1,5 @@
 <a href="https://codeclimate.com/github/LennyCh/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/f6096f05764417e6f1b5/maintainability" /></a>
-https://github.com/LennyCh/frontend-project-lvl1
+https://github.com/LennyCh/frontend-project-lvl1/actions
 
 This file contains a description of five games:
 1) Determination of an even number - "brain-even";

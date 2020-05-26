@@ -2,8 +2,8 @@
 
 import readlineSync from 'readline-sync';
 import random from 'random';
-import { welcome, name, hello, numericalAnswer } from '../index.js';
-import { GCD } from '../games/brain-gcd.js';
+import { welcome, name, hello, numericalAnswer } from '../src/index.js';
+import { GCD } from '../src/games/brain-gcd.js';
 
 welcome();
 name;
