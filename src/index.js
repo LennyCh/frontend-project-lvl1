@@ -1,54 +1,26 @@
 import readlineSync from 'readline-sync';
-import random from 'random';
 
-function welcome() {
-	console.log('Welcome to the Brain Games!');
-};
-const name = readlineSync.question('May I have your name? ');
-function hello() {
-	console.log(`Hello,  ${name}!`);
-};
 const numberOfRounds = 3;
-let correctAnswers = 0;
-function stringAnswer(answer, expectedAnswer) {
-	for (let i = 0; i < numberOfRounds; i += 1) {
-	
-		if (expectedAnswer !== answer) {
-			console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}"`);
-			console.log(`Let's try again, ${name}`);
-			break;
-		} if (expectedAnswer === answer) {
-			correctAnswers += 1;
-			console.log('Correct!');
-			break;
-		};
-	};
-	function congratulations() {
-		if (correctAnswers === numberOfRounds) {
-			console.log(`Congratulations, ${name}!`);
-		};
-	};
-	congratulations();
+
+const answer = (showQuestion, game) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello,  ${name}!`);
+  console.log(showQuestion);
+
+  for (let i = 0; i < numberOfRounds; i += 1) {
+    const [question, expectedAnswer] = game();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+
+    if (expectedAnswer !== userAnswer) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${expectedAnswer}"`);
+      console.log(`Let's try again, ${name}`);
+      return;
+    }
+    console.log('Correct!');
+  }
+  console.log(`Congratulations, ${name}!`);
 };
 
-function numericalAnswer(answer, expectedAnswer) {
-	for (let i = 0; i < numberOfRounds; i += 1) {
-		if (expectedAnswer !== +answer) {
-			console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}"`);
-			console.log(`Let's try again, ${name}`);
-			break;
-		} if (expectedAnswer === +answer) {
-			correctAnswers += 1;
-			console.log('Correct!');
-			break;
-		};
-	};
-	function congratulations() {
-		if (correctAnswers === numberOfRounds) {
-			console.log(`Congratulations, ${name}!`);
-		};
-	};
-	congratulations();
-};
-
-export { welcome, name, hello, stringAnswer, numericalAnswer };
+export default answer;
