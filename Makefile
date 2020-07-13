@@ -1,4 +1,5 @@
-install: install-deps
+install:
+	npm install
 
 brain-even:
 	npx node src/bin/brain-even.js
@@ -15,19 +16,8 @@ brain-calc:
 brain-progression:
 	npx node src/bin/brain-progression.js
 
-install-deps:
-	npm ci
-
-test:
-	npm test
-
-test-coverage:
-	npm test -- --coverage
-
 lint:
 	npx eslint .
 
 publish:
 	npm publish --dry-run
-
-.PHONY: test
