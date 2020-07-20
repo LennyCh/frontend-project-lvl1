@@ -1,14 +1,14 @@
 import random from 'random';
-import answer from '../index.js';
+import startGame from '../index.js';
 
-const showQuestion = 'Answer "yes" if the number is even, otherwise answer "no"';
+const gameQuestion = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const isEven = (number) => number % 2 === 0;
 
 const evenGame = () => {
-  const randomNumber = random.int(1, 100);
-  const expectedAnswer = isEven(randomNumber) ? 'yes' : 'no';
-  return [randomNumber, expectedAnswer];
+  const question = random.int(1, 100);
+  const expectedAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, expectedAnswer];
 };
 
-export default () => answer(showQuestion, evenGame);
+export default () => startGame(gameQuestion, evenGame);
